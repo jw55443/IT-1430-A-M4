@@ -1,0 +1,385 @@
+/* Student Name | Due Date | Assignment 3 */
+
+/* =============================================
+   Galaxia Adventure Park – amuse_styles.css
+   ============================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap');
+
+/* -----------------------------------------------
+   1. HTML background
+----------------------------------------------- */
+html {
+  background-color: #0a0a2e;
+  background-image:
+    radial-gradient(ellipse at 15% 25%, rgba(0, 180, 255, 0.12) 0%, transparent 55%),
+    radial-gradient(ellipse at 85% 75%, rgba(160, 60, 255, 0.12) 0%, transparent 55%),
+    radial-gradient(ellipse at 50% 50%, rgba(255, 80, 30, 0.05) 0%, transparent 70%);
+  min-height: 100%;
+}
+
+/* -----------------------------------------------
+   2. Wrapper – centered, padded, bordered, rounded
+----------------------------------------------- */
+#wrapper {
+  max-width: 1050px;
+  margin: 30px auto;
+  padding: 0;
+  background-color: #0d0d30;
+  border: 2px solid #2a2a6e;
+  border-radius: 14px;
+  font-family: 'Exo 2', Georgia, serif;
+  overflow: hidden;
+}
+
+/* -----------------------------------------------
+   3. Structural elements
+----------------------------------------------- */
+
+/* Header */
+header {
+  background-color: #07071f;
+  color: #c8deff;
+  text-align: center;
+  padding: 36px 24px 24px;
+  border-bottom: 1px solid #1e1e5a;
+}
+
+header h1 {
+  font-family: 'Orbitron', Georgia, serif;
+  font-size: clamp(0.9rem, 2.5vw, 1.4rem);
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  color: #00d4ff;
+  text-transform: uppercase;
+  margin-top: 14px;
+}
+
+/* Nav */
+nav {
+  background-color: #0b0b28;
+  text-align: center;
+  padding: 12px 20px;
+  border-bottom: 3px solid #00aadd;
+}
+
+/* Main */
+main {
+  background-color: #10103a;
+  color: #ccd9f5;
+  padding: 36px 48px;
+}
+
+/* Footer */
+footer {
+  background-color: #07071f;
+  color: #7788aa;
+  text-align: center;
+  padding: 18px 24px;
+  border-top: 1px solid #1e1e5a;
+  font-size: 0.85rem;
+}
+
+/* -----------------------------------------------
+   5. Headings
+----------------------------------------------- */
+h2 {
+  font-family: 'Orbitron', Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #ff7040;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 14px;
+}
+
+h3 {
+  font-family: 'Orbitron', Georgia, serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #cc88ff;
+  letter-spacing: 0.08em;
+  margin: 18px 0 8px;
+}
+
+/* -----------------------------------------------
+   6. HR – min 6px height, colored
+----------------------------------------------- */
+hr {
+  border: none;
+  height: 6px;
+  background: linear-gradient(to right, #00aadd, #8833ff, #ff5522);
+  border-radius: 3px;
+  margin: 28px 0;
+}
+
+/* -----------------------------------------------
+   7. Hyperlinks (related links & footer) –
+      not default blue/purple, no pseudo-states
+----------------------------------------------- */
+main a {
+  color: #00e5cc;
+  text-decoration: underline;
+}
+
+footer a {
+  color: #aa77ff;
+  text-decoration: underline;
+}
+
+/* -----------------------------------------------
+   8 & 9. Nav links – horizontal, centered, rounded,
+           padded, right margin, bordered, no underline
+           + hover only pseudo-state
+----------------------------------------------- */
+nav a {
+  display: inline-block;
+  font-family: 'Orbitron', Georgia, serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #a0c4ff;
+  text-decoration: none;
+  background-color: #12124a;
+  border: 1px solid #334499;
+  border-radius: 20px;
+  padding: 7px 16px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+
+nav a:hover {
+  background-color: #00aadd;
+  color: #000820;
+}
+
+/* -----------------------------------------------
+   10. UL bullets on index.html – square
+----------------------------------------------- */
+ul {
+  list-style-type: square;
+  margin-left: 24px;
+  margin-bottom: 16px;
+}
+
+ol {
+  margin-left: 24px;
+  margin-bottom: 16px;
+}
+
+li {
+  margin-bottom: 8px;
+  color: #ccd9f5;
+  font-size: 0.95rem;
+}
+
+p {
+  margin-bottom: 14px;
+  font-size: 0.96rem;
+  line-height: 1.75;
+}
+
+/* -----------------------------------------------
+   11 & 12. Ride images – float left, border, margin,
+             text wraps beside them
+----------------------------------------------- */
+main img {
+  float: left;
+  width: 280px;
+  height: 190px;
+  object-fit: cover;
+  border: 3px solid #00aadd;
+  border-radius: 6px;
+  margin: 4px 22px 16px 0;
+}
+
+/* -----------------------------------------------
+   13. Table – bordered, centered within main
+----------------------------------------------- */
+table {
+  width: 90%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  font-size: 0.9rem;
+}
+
+/* -----------------------------------------------
+   14. First row (thead / th row) – different bg & text
+----------------------------------------------- */
+th {
+  background-color: #001a44;
+  color: #00d4ff;
+  font-family: 'Orbitron', Georgia, serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 13px 18px;
+  border: 2px solid #003388;
+  text-align: center;
+}
+
+/* -----------------------------------------------
+   15. Alternating row colors (odd/even)
+----------------------------------------------- */
+tr:nth-child(odd) td {
+  background-color: #0d1a3a;
+  color: #b8ccee;
+}
+
+tr:nth-child(even) td {
+  background-color: #081228;
+  color: #d4e4ff;
+}
+
+/* -----------------------------------------------
+   16. TD – padding, centered
+----------------------------------------------- */
+td {
+  padding: 11px 18px;
+  border: 1px solid #1a2a55;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* -----------------------------------------------
+   17. Caption – above table, right-aligned,
+       padded, different color
+----------------------------------------------- */
+caption {
+  caption-side: top;
+  text-align: right;
+  padding: 6px 10px;
+  color: #88aadd;
+  font-style: italic;
+  font-size: 0.85rem;
+}
+
+/* -----------------------------------------------
+   18. Form – background, padding, centered
+----------------------------------------------- */
+form {
+  background-color: #0a0a28;
+  padding: 28px 32px;
+  border-radius: 8px;
+  max-width: 680px;
+  margin: 16px auto;
+}
+
+/* -----------------------------------------------
+   19. Fieldsets – borders, margins, backgrounds, width
+----------------------------------------------- */
+fieldset {
+  border: 2px solid #224488;
+  border-radius: 8px;
+  background-color: #0d0d38;
+  padding: 22px 26px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+/* -----------------------------------------------
+   20. Legends – rounded borders, background, padding
+----------------------------------------------- */
+legend {
+  font-family: 'Orbitron', Georgia, serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #00d4ff;
+  background-color: #001a44;
+  border: 2px solid #003388;
+  border-radius: 20px;
+  padding: 5px 16px;
+}
+
+/* -----------------------------------------------
+   21. Form elements lined up, submit centered
+----------------------------------------------- */
+label {
+  display: inline-block;
+  color: #ccd9f5;
+  font-size: 0.88rem;
+  min-width: 160px;
+  margin-bottom: 6px;
+  vertical-align: middle;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+select {
+  background-color: #080820;
+  border: 1px solid #334488;
+  border-radius: 4px;
+  color: #ccd9f5;
+  padding: 7px 12px;
+  font-family: 'Exo 2', Georgia, serif;
+  font-size: 0.88rem;
+  min-width: 220px;
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus {
+  border-color: #00aadd;
+  outline: none;
+}
+
+input[type="range"] {
+  accent-color: #00d4ff;
+  width: 280px;
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: #cc88ff;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  min-width: unset;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: 16px auto 0;
+  background-color: #ff5522;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 13px 40px;
+  font-family: 'Orbitron', Georgia, serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff7a4a;
+}
+
+/* clearfix for floated images */
+main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ride section clearfix so each ride clears its float */
+.ride-section::after {
+  content: "";
+  display: table;
+  clear: both;
+}

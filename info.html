@@ -1,0 +1,78 @@
+<!-- Student Name | Due Date | Assignment 4 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Williams: Assign4</title>
+  <link rel="stylesheet" href="amuse_styles.css">
+  <script src="amuse_script.js"></script>
+</head>
+<body>
+<div id="wrapper">
+
+  <header>
+    <img src="images/logo.svg" alt="Galaxia Adventure Park Logo" id="logo">
+    <h1>Where the Universe Becomes Your Playground!</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="rides.html">Rides &amp; Attractions</a>
+    <a href="info.html">Ride Info</a>
+    <a href="order.html">Order Tickets</a>
+    <a href="index.html#events">Upcoming Events</a>
+    <a href="index.html#news">Related Park News</a>
+  </nav>
+
+  <main>
+    <h2>Ride Information</h2>
+
+    <table>
+      <caption>All rides close 10 minutes before the park closes. Height requirements strictly enforced.</caption>
+      <tr>
+        <th>Ride Name</th>
+        <th>Height Requirement</th>
+        <th>Duration</th>
+        <th>Thrill Level</th>
+      </tr>
+      <tr id="SS">
+        <td onclick="rideInfo(this)">Supernova Surge</td>
+        <td>48 inches or taller</td>
+        <td>2 minutes 30 seconds</td>
+        <td>Extreme</td>
+      </tr>
+      <tr id="BHD">
+        <td onclick="rideInfo(this)">Black Hole Drop</td>
+        <td>52 inches or taller</td>
+        <td>1 minute 15 seconds</td>
+        <td>Extreme</td>
+      </tr>
+      <tr id="ARR">
+        <td onclick="rideInfo(this)">Asteroid River Rapids</td>
+        <td>40 inches or taller</td>
+        <td>6 minutes</td>
+        <td>Moderate</td>
+      </tr>
+      <tr id="LC">
+        <td onclick="rideInfo(this)">Lunar Carousel</td>
+        <td>No minimum</td>
+        <td>4 minutes</td>
+        <td>Family / Mild</td>
+      </tr>
+      <tr id="NVR">
+        <td onclick="rideInfo(this)">Nebula VR Experience</td>
+        <td>36 inches or taller</td>
+        <td>8 minutes</td>
+        <td>Mild</td>
+      </tr>
+    </table>
+  </main>
+
+  <footer>
+    <p>&copy; Due Date | <a href="mailto:student@georgiasouthern.edu">student@georgiasouthern.edu</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

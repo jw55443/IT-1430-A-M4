@@ -1,0 +1,123 @@
+<!-- Student Name | Due Date | Assignment 4 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Williams: Assign4</title>
+  <link rel="stylesheet" href="amuse_styles.css">
+  <script src="amuse_script.js"></script>
+</head>
+<body>
+<div id="wrapper">
+
+  <header>
+    <img src="images/logo.svg" alt="Galaxia Adventure Park Logo" id="logo">
+    <h1>Where the Universe Becomes Your Playground!</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="rides.html">Rides &amp; Attractions</a>
+    <a href="info.html">Ride Info</a>
+    <a href="order.html">Order Tickets</a>
+    <a href="index.html#events">Upcoming Events</a>
+    <a href="index.html#news">Related Park News</a>
+  </nav>
+
+  <main>
+    <h2>Order Tickets</h2>
+
+    <form method="get" action="formProcessor.html" onsubmit="orderTics()">
+
+      <!-- Fieldset 1: Personal Information -->
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="100"><br>
+      </fieldset>
+
+      <!-- Fieldset 2: Ticket Options -->
+      <fieldset>
+        <legend>Ticket Options</legend>
+
+        <label for="numTickets">Number of Tickets:</label>
+        <select id="numTickets" name="numTickets">
+          <option value=""></option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+        </select><br><br>
+
+        <label for="donation">How much do you want to donate to the park? ($<span id="donationVal">50</span>)</label><br>
+        <input type="range" id="donation" name="donation" min="1" max="100" step="3" value="50"
+               oninput="document.getElementById('donationVal').textContent=this.value"><br><br>
+
+        <p>Order Add-ons:</p>
+        <input type="checkbox" id="fastpass" name="addons" value="fastpass" checked>
+        <label for="fastpass">Fast Pass (Skip the Line)</label><br>
+
+        <input type="checkbox" id="mealplan" name="addons" value="mealplan" checked>
+        <label for="mealplan">Galactic Meal Plan</label><br>
+
+        <input type="checkbox" id="souvenir" name="addons" value="souvenir">
+        <label for="souvenir">Souvenir Bundle</label><br>
+
+        <input type="checkbox" id="photopackage" name="addons" value="photopackage">
+        <label for="photopackage">Ride Photo Package</label><br>
+      </fieldset>
+
+      <!-- Fieldset 3: Delivery -->
+      <fieldset>
+        <legend>Delivery Options</legend>
+
+        <label for="deliveryDate">Delivery Date:</label>
+        <input type="date" id="deliveryDate" name="deliveryDate"><br><br>
+
+        <p>Delivery Method:</p>
+
+        <input type="radio" id="emailDelivery" name="deliveryMethod" value="emailDelivery">
+        <label for="emailDelivery">Email (PDF Ticket)</label><br>
+
+        <input type="radio" id="textDelivery" name="deliveryMethod" value="textDelivery">
+        <label for="textDelivery">Text Message (Mobile Ticket)</label><br>
+
+        <input type="radio" id="appDelivery" name="deliveryMethod" value="appDelivery">
+        <label for="appDelivery">Galaxia App</label><br>
+
+        <input type="radio" id="mailDelivery" name="deliveryMethod" value="mailDelivery">
+        <label for="mailDelivery">Physical Mail</label><br>
+
+        <input type="radio" id="willCall" name="deliveryMethod" value="willCall">
+        <label for="willCall">Will Call at Gate</label><br>
+
+        <input type="radio" id="kiosk" name="deliveryMethod" value="kiosk">
+        <label for="kiosk">Park Kiosk Pickup</label><br>
+      </fieldset>
+
+      <input type="submit" value="Order Ticket!">
+
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; Due Date | <a href="mailto:student@georgiasouthern.edu">student@georgiasouthern.edu</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
